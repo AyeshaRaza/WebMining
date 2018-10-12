@@ -22,7 +22,7 @@ class listener(StreamListener):
         # do stuff with the tweets. write to file, to db, etc
         #Ayesha: print just the tweets and save with below 4 lines of code and comment out line 28
         tweet = json.loads(data)
-        tweet["text"]
+        print(tweet["text"])
         with open("kanyeWest.txt","a") as outFile:
             outFile.write(data + "\n")
         #print(data)
